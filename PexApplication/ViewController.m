@@ -25,12 +25,15 @@
 }
 - (IBAction)solve:(id)sender {
     NSLog(@"yes");
-    NSString *url = [NSString stringWithFormat:@"https://api.codehunt.com/api/token?grant_type=client_credentials&client_id=anonymous&client_secret=anonymous"];
+//    NSString *url = [NSString stringWithFormat:@"https://api.codehunt.com/api/token?grant_type=client_credentials&client_id=anonymous&client_secret=anonymous"];
+    NSString *url = [NSString stringWithFormat:@"https://api.codehunt.com/api/programs"];
     NSLog(url);
     NSURL *newURL = [NSURL URLWithString:url];
+    NSString *filePath = @"/Users/Adam/Documents/workspace/PexTestCase/src/TestCase.java ";
+    NSData *data = [[NSFileManager defaultManager]contentsAtPath:filePath];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:newURL];
     [request setHTTPMethod:@"POST"];
-    [request setValue:@"appl" forHTTPHeaderField:@"NjM1OTg4OTg1NzU4MDUyMzI1JEE2NzZiYTJjYTQ4ZjA0MDM1OGRkZGNmOTM2ZGUyMGIzMiQ="];
+    [request setHTTPBody:data ];
     NSURLResponse *response;
     NSError *err;
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&err];

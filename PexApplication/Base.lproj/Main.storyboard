@@ -22,6 +22,7 @@
                                 <state key="normal" title="Execute"/>
                                 <connections>
                                     <action selector="solve:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9sz-bo-By7"/>
+                                    <segue destination="cqP-k4-na0" kind="modal" id="aeZ-v7-9az"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -31,6 +32,51 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="69" y="195"/>
+        </scene>
+        <!--Result Controller-->
+        <scene sceneID="aqb-vt-EBR">
+            <objects>
+                <viewController id="cqP-k4-na0" customClass="ResultController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lkF-yh-Rpx"/>
+                        <viewControllerLayoutGuide type="bottom" id="g5F-vj-8jf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RDj-Vl-OSn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Results Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXm-Kc-ViX">
+                                <rect key="frame" x="251" y="28" width="99" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sxf-Yu-cQE">
+                                <rect key="frame" x="92" y="103" width="416" height="441"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0p-r0-erA">
+                                <rect key="frame" x="48" y="24" width="44" height="30"/>
+                                <animations/>
+                                <state key="normal" title="debug"/>
+                                <connections>
+                                    <action selector="debug:" destination="cqP-k4-na0" eventType="touchUpInside" id="R0H-G6-yCh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultTable" destination="RDj-Vl-OSn" id="2rK-av-3Gn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iGw-39-JqZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="195"/>
         </scene>
     </scenes>
 </document>

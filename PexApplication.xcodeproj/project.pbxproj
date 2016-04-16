@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		662DDCEF1CC1A49200910657 /* ResultController.m in Sources */ = {isa = PBXBuildFile; fileRef = 662DDCEE1CC1A49200910657 /* ResultController.m */; };
 		66DCCE2A1CC0B91B00D12D9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DCCE291CC0B91B00D12D9E /* main.m */; };
 		66DCCE2D1CC0B91B00D12D9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DCCE2C1CC0B91B00D12D9E /* AppDelegate.m */; };
 		66DCCE301CC0B91B00D12D9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DCCE2F1CC0B91B00D12D9E /* ViewController.m */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		662DDCED1CC1A49200910657 /* ResultController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultController.h; sourceTree = "<group>"; };
+		662DDCEE1CC1A49200910657 /* ResultController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultController.m; sourceTree = "<group>"; };
 		66DCCE251CC0B91B00D12D9E /* PexApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PexApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DCCE291CC0B91B00D12D9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66DCCE2B1CC0B91B00D12D9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				66DCCE2C1CC0B91B00D12D9E /* AppDelegate.m */,
 				66DCCE2E1CC0B91B00D12D9E /* ViewController.h */,
 				66DCCE2F1CC0B91B00D12D9E /* ViewController.m */,
+				662DDCED1CC1A49200910657 /* ResultController.h */,
+				662DDCEE1CC1A49200910657 /* ResultController.m */,
 				66DCCE311CC0B91B00D12D9E /* Main.storyboard */,
 				66DCCE341CC0B91B00D12D9E /* Assets.xcassets */,
 				66DCCE391CC0B91B00D12D9E /* Info.plist */,
@@ -268,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				662DDCEF1CC1A49200910657 /* ResultController.m in Sources */,
 				66DCCE301CC0B91B00D12D9E /* ViewController.m in Sources */,
 				66DCCE2D1CC0B91B00D12D9E /* AppDelegate.m in Sources */,
 				66DCCE2A1CC0B91B00D12D9E /* main.m in Sources */,
@@ -488,6 +494,7 @@
 				66DCCE541CC0B91B00D12D9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66DCCE551CC0B91B00D12D9E /* Build configuration list for PBXNativeTarget "PexApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +503,7 @@
 				66DCCE571CC0B91B00D12D9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66DCCE581CC0B91B00D12D9E /* Build configuration list for PBXNativeTarget "PexApplicationUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +512,7 @@
 				66DCCE5A1CC0B91B00D12D9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
